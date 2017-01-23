@@ -23,9 +23,11 @@ function updateBadge(state) {
     chrome.browserAction.setBadgeText({text: ''});
   }
 }
+
 chrome.runtime.onInstalled.addListener(function (object) {
 
 });
+
 chrome.runtime.onInstalled.addListener(function() {
   chrome.tabs.create({url: "http://yoursite.com/"}, function (tab) {
     console.log("New tab launched with http://yoursite.com/");
@@ -39,11 +41,16 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   }
   var state = tabState(sender.tab.id);
   if (request.replacing) {
+    if (state.last == request.with) {
+      // Don't repeat the last redirect.
+      return;
+    }
     if (ignore.indexOf(request.replacing) == -1) {
       state.max = request.replacing;
       state.min = request.with;
       state.showing = "MIN";
       updateBadge(state);
+      state.last = request.with;
       sendResponse({replace: request.with});
     } else {
       state.showing = "MAX";
