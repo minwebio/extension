@@ -1,7 +1,8 @@
 
 
-setTimeout(function() {
+var interval = setInterval(function() {
   if (document.head) {
+    clearInterval(interval);
     var links = document.head.getElementsByTagName('link');
     for (var link in links) {
       if (links.hasOwnProperty(link)) {
@@ -15,7 +16,6 @@ setTimeout(function() {
         }
       }
     }
-    console.log("Minweb ran.");
   }
 }, 10);
 

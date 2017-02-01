@@ -28,11 +28,11 @@ chrome.runtime.onInstalled.addListener(function (object) {
 
 });
 
-chrome.runtime.onInstalled.addListener(function() {
-  chrome.tabs.create({url: "http://yoursite.com/"}, function (tab) {
-    console.log("New tab launched with http://yoursite.com/");
-  });
-});
+//chrome.runtime.onInstalled.addListener(function() {
+//  chrome.tabs.create({url: "http://yoursite.com/"}, function (tab) {
+//    console.log("New tab launched with http://yoursite.com/");
+//  });
+//});
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (!sender.tab) {
