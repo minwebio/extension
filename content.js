@@ -1,5 +1,4 @@
 
-
 var interval = setInterval(function() {
   if (document.head) {
     clearInterval(interval);

@@ -1,5 +1,4 @@
 chrome.browserAction.setBadgeText({text: ""});
-console.log("Loaded.");
 
 var tabs = {
   //tab.id: {showing:"MIN|MAX|[none is empty string]", max:"", min:""}
@@ -24,13 +23,8 @@ function updateBadge(state) {
   }
 }
 
-chrome.runtime.onInstalled.addListener(function (object) {
-
-});
-
 //chrome.runtime.onInstalled.addListener(function() {
-//  chrome.tabs.create({url: "http://yoursite.com/"}, function (tab) {
-//    console.log("New tab launched with http://yoursite.com/");
+//  chrome.tabs.create({url: "http://minweb.io/"}, function (tab) {
 //  });
 //});
 
