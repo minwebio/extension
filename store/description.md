@@ -1,11 +1,11 @@
 
 # Title:
 
-Support publishers while browsing a browsable web
+Show AMP pages while browsing
 
 # Description:
 
-Automatically shows the most minimal version of a page provided by the publisher.  Browse faster and protect yourself while making sure the ecosystem of the web continues to flourish.
+Automatically shows the most minimal version (AMP, etc) of a page directly on the publisher's site.  Browse faster and protect yourself while making sure the ecosystem of the web continues to flourish.
 
 ☆☆☆ Support Content Producers ☆☆☆
 

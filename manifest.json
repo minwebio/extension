@@ -1,8 +1,8 @@
 {
-  "name": "minweb.io: a cleaner web",
+  "name": "Show AMP pages while browsing",
   "short_name": "minweb",
   "description": "Support publishers while browsing a browsable web.",
-  "version": "0.1",
+  "version": "0.5",
   "manifest_version": 2,
   "permissions": ["tabs", "*://*/*"],
   "background": {
